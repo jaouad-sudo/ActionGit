@@ -1,0 +1,33 @@
+{
+  "name": "devops-pipeline-lab-jaouad",
+  "version": "1.0.0",
+  "description": "Projet simple Node.js pour apprendre les pipelines CI/CD avec GitHub Actions",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "devops",
+    "ci-cd",
+    "github-actions",
+    "nodejs",
+    "jest"
+  ],
+  "author": "Jaouad",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
